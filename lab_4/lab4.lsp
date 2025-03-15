@@ -92,6 +92,67 @@
         )
     )
 ) () () ) )
+
+(defun play () (
+    (let    (res1 (oneplayer (cons (throw_dices) nil)))
+            (res2 (oneplayer (cons (throw_dices) nil)))
+        (print "player 1")
+        (cond   
+        (   (car res1) 
+            (print "player 1 WIN")
+            (cons res1 res2)
+        )
+        (   T 
+            ((lambda ()   
+                (print "player 2")
+                (setf res2 (oneplayer (cons (throw_dices) nil)))
+                (cond   
+                    (   (car res2)
+                        (print "player 2 WIN")
+                    )
+                    (   T 
+                        ((lambda (s1 s2)
+                            (cond   ((> s1 s2) (print "player 1 WIN"))
+                                    ((< s1 s2)  (print "player 2 WIN"))
+                                    (T  (print "no winner")))
+                        ) (sum_dices (cadr res1)) (sum_dices (cadr res2)))
+                    )
+                )
+            ))
+        )
+    )
+    )
+
+    (lambda (res1 res2) 
+    (print "player 1")
+    (setf res1 (oneplayer (cons (throw_dices) nil)))
+    (cond   
+        (   (car res1) 
+            (print "player 1 WIN")
+            (cons res1 res2)
+        )
+        (   T 
+            ((lambda ()   
+                (print "player 2")
+                (setf res2 (oneplayer (cons (throw_dices) nil)))
+                (cond   
+                    (   (car res2)
+                        (print "player 2 WIN")
+                    )
+                    (   T 
+                        ((lambda (s1 s2)
+                            (cond   ((> s1 s2) (print "player 1 WIN"))
+                                    ((< s1 s2)  (print "player 2 WIN"))
+                                    (T  (print "no winner")))
+                        ) (sum_dices (cadr res1)) (sum_dices (cadr res2)))
+                    )
+                )
+            ))
+        )
+    )
+) () () 
+
+) )
 ; (play)
 
 

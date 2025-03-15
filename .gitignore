@@ -1,3 +1,6 @@
+falp_info/
+old_falp/
+
 *.FASL
 *.fasl
 *.lisp-temp
