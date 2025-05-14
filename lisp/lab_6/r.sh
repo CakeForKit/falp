@@ -1,0 +1,1 @@
+sbcl --script ./lab6.lsp 

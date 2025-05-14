@@ -1,0 +1,1 @@
+sbcl --script ./lab5.lsp 

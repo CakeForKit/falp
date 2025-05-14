@@ -1,1 +1,0 @@
-sbcl --script ./lab4.lsp 
