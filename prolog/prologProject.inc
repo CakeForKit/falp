@@ -20,3 +20,9 @@ global domains
 include "lab7.pre"
 
 include "lab8.pre"
+
+include "lab9.pre"
+
+include "lab10.pre"
+
+include "lab11.pre"

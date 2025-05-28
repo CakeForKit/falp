@@ -23,7 +23,6 @@ domains
     		building(propertyName, price);
     		water_vehicle(propertyName, price, colour).
 	
-
 predicates
 	phonebook(surname, phone, address).
 	depositors(surname, bank, account, amount).

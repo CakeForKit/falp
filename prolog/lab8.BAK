@@ -81,7 +81,7 @@ goal
 	
 	% propertyAndPriceOfPerson(surname1, PropertyName, Price).
 	% propertyAndPriceOfPerson(surname2, PropertyName, Price).
-	propertyAndPriceOfPerson(surname3, PropertyName, Price).
+	% propertyAndPriceOfPerson(surname3, PropertyName, Price).
 	
 	% sumPropertyPrice(surname1, ResPrice).
 	% sumPropertyPrice(surname2, ResPrice).
